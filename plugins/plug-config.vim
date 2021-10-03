@@ -12,6 +12,7 @@ source $HOME/.config/nvim/plugins/coc-config.vim
 "█▀█ █ █▀▄ █▄▄ █ █░▀█ ██▄
 
 " enable tabline
+"mostrar los buffers abiertos como pestañas
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = ''

@@ -1,24 +1,42 @@
 # Neovim Linux - WSL (Windows Subsytem for linux) 
-Toda la explicación se encuentra en mi canal de youtube. [Joaquin Varela ](https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A)
-Tengo varios videos con explicaciones de instalación y configuración.
+Mayor información sobre instalación y configuración: [Joaquin Varela ](https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A)
 
-##  Requerimientos
-- Neovim 5.0+ (Si no es esa version algunos plugins no tienen soporte)
-- Node.js
-- Npm
-- Git
-- Gcc ( C/C++ compilador (Requerido por [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)) ) 
-- Vim-Plug
-## Contenidos de la configuración
-- Nerdtree  como FileManager 
-- Git para ejecutar 
-- Coc.vim y TreeSitter para el autocompletado
-- Airline para moverse entre varios archivos abiertos
-- IndentLines para tener las lineas de identado
-- EasyMotion 
-- Auto-Pairs
-- Vim-CloseTags
-- Vim-Multiple-Cursors
+## CONFIGURAR VIM COMO VSCODE:
+### 1. Instalar nodejs12:
+> * `sudo apt update` <br>
+> * `sudo apt -y upgrade` <br>
+> * `sudo apt update` <br>
+> * `sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates` <br>
+> `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` <br>
+> * `sudo apt -y install nodejs` <br>
+> * `sudo apt -y  install gcc g++ make` <br>
 
+### 2. Instalar neovim 0.6:
+> * `sudo add-apt-repository ppa:neovim-ppa/unstable` <br>
+> * `sudo apt-get update` <br>
+> * `sudo apt-get install neovim` <br>
+
+### 3. Configurar neovim:
+> * `cd` <br>
+> * `mkdir .config/` <br>
+> * `cd .config/` <br>
+> * `sudo apt install git` <br>
+> * `git clone https://github.com/kurumii002/nvim-linux` <br>
+> * `mv nvim-linux/ nvim` <br>
+> * `sudo apt install ripgrep` <br>
+
+### 4. Instalar vimplug y plugins:
+> * `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
+> * `nvim init.vim` <br>
+> * `:PlugInstall` <br>
+
+### 5. Instalar dependencias para COC:
+- coc-java
+- coc-json
+- coc-python
+- coc-tsserver
+- coc-vimlsp
+  
 
 
