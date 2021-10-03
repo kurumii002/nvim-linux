@@ -7,7 +7,7 @@ Mayor información sobre instalación y configuración: [Joaquin Varela ](https:
 > * `sudo apt -y upgrade` <br>
 > * `sudo apt update` <br>
 > * `sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates` <br>
-> `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` <br>
+> * `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` <br>
 > * `sudo apt -y install nodejs` <br>
 > * `sudo apt -y  install gcc g++ make` <br>
 
