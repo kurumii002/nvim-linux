@@ -31,12 +31,12 @@ Mayor información sobre instalación y configuración: [Joaquin Varela ](https:
 > * `nvim init.vim` <br>
 > * `:PlugInstall` <br>
 
-### 5. Instalar dependencias para COC:
-- coc-java
-- coc-json
-- coc-python
-- coc-tsserver
-- coc-vimlsp
-  
-
-
+### 5. Instalar languages servers para COC:
+- `:CocInstall coc-java` -> para sintaxis Java
+- `:CocInstall coc-json` -> para sintaxis JSON
+- `:CocInstall coc-pyright` -> para sintaxis Python 3
+- `:CocInstall coc-python` -> para sintaxis Python
+- `:CocInstall coc-tsserver` -> para sintaxis JavaScript/TypeScript
+- `:CocInstall coc-html` -> para sintaxis HTML
+- `:CocInstall coc-markdownlint` -> para sintaxis Markdown
+- `:CocInstall coc-phpls` -> para sintaxis PHP
